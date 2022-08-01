@@ -1,0 +1,20 @@
+.row{
+    background-color: #6e449a;
+}
+footer{
+    flex-basis: 100%;
+    display: flex;
+    background: rgba(82,67,114,1);
+background: -moz-linear-gradient(top, rgba(82,67,114,1) 0%, rgba(47,31,84,1) 50%, rgba(82,67,114,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(82,67,114,1)), color-stop(50%, rgba(47,31,84,1)), color-stop(100%, rgba(82,67,114,1)));
+background: -webkit-linear-gradient(top, rgba(82,67,114,1) 0%, rgba(47,31,84,1) 50%, rgba(82,67,114,1) 100%);
+background: -o-linear-gradient(top, rgba(82,67,114,1) 0%, rgba(47,31,84,1) 50%, rgba(82,67,114,1) 100%);
+background: -ms-linear-gradient(top, rgba(82,67,114,1) 0%, rgba(47,31,84,1) 50%, rgba(82,67,114,1) 100%);
+background: linear-gradient(to bottom, rgba(82,67,114,1) 0%, rgba(47,31,84,1) 50%, rgba(82,67,114,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#524372', endColorstr='#524372', GradientType=0 );
+    height: 70px;
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+
+section{
+    background-image: url(../../../assets/imageForm/672388.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.form-control{
+    background: rgba(255, 255, 255, 0.26);
+    border: 1px solid transparent;
+    border-radius: 40px;
+    
+}
+.form-control:focus, .form-control:hover {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: rgba(255,255,255,.4);
+}
+::placeholder{
+    color: rgb(85, 84, 84);
+    text-align: center;
+}
+h2{
+    color: rgba(255, 255, 255, 0.916);
+    font-size: 38px;
+}
+button{
+    border-radius: 40px;
+}

@@ -1,26 +1,31 @@
 <div class="row">
     <h1>Experiencia laboral</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h2>Lic.en Nutrición "GYM EFIT"</h2> - <h3>(years)</h3>
-            </li>
-            <p>Realicé evaluaciones, diagnósticos y planes nutricionales personalizados tanto en personas sanas, 
-                atléticas como así también en personas con sobrepeso u obesidad y riesgos que estos conllevan
-                logrando un 90% de éxito en la adherencia a los tratamientos.</p>
-        </ul>
-        <ul>
-            <li>
-                <h2>Captadora de fondos "UNICEF"</h2> - <h3>(years)</h3>
-            </li>
-            <p>El objetivo principal era recaudar fondos en la vía pública a través de habilidades de comunicación y negociación, a demás la exposición de campañas de concientización.</p>
-        </ul>
-        <ul>
-            <li>
-                <h2>Cajera Joyería "QOSQO"</h2> - <h3>(years)</h3>
-            </li>
-            <p>Desarrollé habilidades de atención y asesoramiento al cliente, apertura y cierre de caja, armado de vidrieras, encargada del local. </p>
-        </ul>
+    <div class="col lg 2">
+        <button type="button" class="btn btn-light" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva experiencia
+        </button>
     </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td><h3>{{Experiencia.nombreE}}</h3></td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-light" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i>EDITAR</button>
+                    </td>
+                        
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-light" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+    
+        </table>
+    </div>
+    
 </div>
